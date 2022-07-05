@@ -1,5 +1,8 @@
-import { Team } from "../components/team/team";
 import DavidImg from "../public/assets/imgTeam/David.png";
+import JasielImg from "../public/assets/imgTeam/Jasiel.png";
+import SolImg from "../public/assets/imgTeam/Sol.png";
+import JesusImg from "../public/assets/imgTeam/Jesus.png";
+import Img from 'next/image';
 
 export default function Home() {
   const teamData = [
@@ -11,32 +14,30 @@ export default function Home() {
     {
       name: "Jasiel",
       rol: "Full-Stack",
-      img: DavidImg,
+      img: JasielImg,
     },
     {
       name: "Sol",
       rol: "Pedagoga",
-      img: DavidImg,
+      img: SolImg,
     },
     {
       name: "Jesus",
       rol: "Full-Stack",
-      img: DavidImg,
+      img: JesusImg,
     },
   ];
 
   return (
-    <div>
-      <div>
-        {teamData.map((user) => (
-          <div>
-            <img src={user.img.src} />
-            <h1>{user.name}</h1>
-            <h1 className="text-blue-700 text-2xl">{user.rol}</h1>
-          </div>
-        ))}
-      </div>
-      <Team />
+    <div className="w-full h-fit text-center">
+      <h2 className="text-white font-bold text-5xl">Equipo</h2>
+      {teamData.map((user) => (
+        <div key={user.name} className="my-8">
+          <Img src={user.img.src} width={134} height={130}/>
+          <h1 className="text-white font-bold text-3xl">{user.name}</h1>
+          <h1 className="text-white text-base">{user.rol}</h1>
+        </div>
+      ))}
     </div>
   );
 }
