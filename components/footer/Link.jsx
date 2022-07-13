@@ -1,3 +1,1 @@
-export const Link = ({src,text}) => (
-  <a href={src}>{text}</a>
-)
+export const Link = ({ src, text }) => <a href={src}>{text}</a>;

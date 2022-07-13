@@ -5,7 +5,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        bgNavbar: "#212c627a",
+        bgListNavbarfrist: "#B10AAB",
+        bgListNavbarSecond: "#162967",
+      },
+    },
   },
   plugins: [],
 };

@@ -114,3 +114,37 @@
     flex-direction: column;
   }
 }
+
+.h2Title {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.liLanding {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+}
+
+.DivUlNavbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.liNavbar {
+  padding: 0.5em;
+  color: white;
+  font-size: x-large;
+}
+
+.bgNavbar {
+  background-color: linear-gradient(
+    90.23deg,
+    #b10aab 0.2%,
+    #162967 99.81%,
+    rgba(255, 255, 255, 0) 99.81%
+  );
+}
